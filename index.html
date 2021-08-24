@@ -8,7 +8,6 @@
     <title>Airtable | Create apps that perfectly fit your team's needs</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* */
 
     </style>
 </head>
@@ -37,6 +36,101 @@
             </div>
         </nav> -->
     </header>
+
+       <!-- Header segment -->
+       <div>
+        <div id="header" style="border-bottom:1px solid lightgrey;height:60px;margin-bottom:-10px;">
+            <div><a href = "file:///C:/Users/LENOVO/renu/masai_new/html/Argon-project/Airtable_Project2/index.html"><img id = "airtable-logo" src = "C:\Users\LENOVO\OneDrive\Pictures\Screenshots\airtable_logo.png"></a></div>
+            <div class="hide" id="product"> Product 
+                <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg>
+            </div>
+            <div class="hide">Solutions <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+            <div class="hide">Enterprise</div>
+            <div class="hide"  style="flex-grow:1">Pricing</div>
+            <div class="hide">Resources<svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+            <div >Contact Sales</div>
+            <div> <a href="C:\Users\LENOVO\renu\masai_new\html\Argon-project\signup.html" style="text-decoration-line:none; color:inherit">Sign in</a></div>   
+            <div><button id="signup-btn-header" class="center blue signup-btn"> <a href="C:\Users\LENOVO\renu\masai_new\html\Argon-project\signup.html" style="text-decoration-line:none; color:inherit">Sign up for free</a></button></div>
+            <div id='menu-bar' onclick = "toggle_list()"><img src="C:\Users\LENOVO\OneDrive\Pictures\Screenshots\menu-bar.png"></div>
+        </div>
+
+        <div style="clear:both;" id="menu-list">
+            <div style="margin-top:90px;">
+                <p onclick="toggle_list_items('product-list','product-svg')">Products</p><svg id="product-svg" width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;margin-right:10%"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr >
+                <div id="product-list" class="menu-list-items">
+                    <div>
+                        <div style="flex-basis:50%">
+                            <p>Overview</p>
+                            <p>Integrations</p>
+                            <p>Marketplace</p>
+                            <p>What's new</p>
+                        </div>
+
+                        <div>
+                            <section>FEATURES</section>
+                            <p>Views</p>
+                            <p>Automations</p>
+                            <p>Sync</p>
+                            <p>Reporting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p onclick="toggle_list_items('solutions-list','solutions-svg')">Solutions</p><svg id="solutions-svg" width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;margin-right:10%"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr >
+                <div id="solutions-list" class="menu-list-items">
+                    <div>
+                        <div style="flex-basis:50%">
+                            <section>BY TEAM</section>
+                            <p>Marketing</p>
+                            <p>Product</p>
+                            <p>Operations</p>
+                            <p>HR</p>
+                            <p>Sales </p>
+                            <p>Finance</p>
+                        </div>
+
+                        <div>
+                            <section>TEMPLATES</section>
+                            <p>Content Operations</p>
+                            <p>Product Roadmanp</p>
+                            <p>Project Tracket</p>
+                            <p>Social Media calendar</p>
+                            <p>Marketing Campaign Traker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div><p>Enterprise</p><hr ></div>
+
+            <div><p>Pricing</p><hr ></div>
+
+            <div>
+            <p onclick="toggle_list_items('resources-list','resources-svg')">Resources</p><svg id='resources-svg' width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;margin-right:10%"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr >
+                <div id="resources-list" class="menu-list-items">
+                    <div>
+                        <div style="flex-basis:50%">
+                            <p>Airtable Support</p>
+                            <p>Blog</p>
+                            <p>Downloads</p>
+                            <p>Developers</p>
+                        </div>
+
+                        <div>
+                            <p>Templates</p>
+                            <p>Universe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div><p>Sign in</p><hr></div>
+ 
+        </div>
+    </div>
+
     <main class="clear">
         <section id="main-slideshow">
             <div id="main-text">
