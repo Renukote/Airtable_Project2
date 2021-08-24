@@ -479,7 +479,43 @@
                 }, 600);
             }
             return newSlideIndex;
-        }        
+        }       
+
+                function toggle_list() {
+            var parent = document.getElementById('menu-bar');
+            var element = document.getElementById('menu-list');
+
+            var status = element.style.display;
+            if( status !== 'none') 
+            {
+                element.style.display = "none";
+                parent.style.transform = "rotate(0deg)";
+
+            }
+            else 
+            {
+                element.style.display = "inline";
+                parent.style.transform = "rotate(90deg)";
+            }
+        }
+
+        function toggle_list_items(id,svg) {
+            var items = document.getElementById(id);
+            var status = items.style.display;
+            var icon = document.getElementById(svg);
+
+            if( status !== 'none') 
+            {
+                items.style.display = "none";
+                icon.style.transform = 'rotate(270deg)';
+                
+            }
+            else
+            {
+                icon.style.transform = 'rotate(0deg)';
+                items.style.display = "inline";
+            }  
+        } 
     </script>
 
 </body>

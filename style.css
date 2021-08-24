@@ -643,6 +643,74 @@
     }
 }
 
+@media only screen and (max-width:1150px) {
+    .hide {
+        display:none;
+    }
+    #header > div:nth-of-type(7) {
+        width:49%;
+        float:left;
+        text-align: right;
+        padding-right:2%;
+    }
+    #header > div:nth-of-type(8) {
+        width:50px;
+        float:left;
+        text-align: left;
+        margin-right:10px;
+        padding-right:1%;
+    }
+    #signup-btn-header {
+        width:140px;
+    }
+    #menu-bar {
+        display:inline;
+        position:fixed;
+        float:right;
+        top:0;
+        padding:10px;
+        right:0;
+        margin-right:4%;
+    }
+    #menu-list {
+        padding:0% 5%;
+        font-size:19px;  
+        display:none;
+        position:fixed;
+        width:100%;
+        background:white;
+        z-index:1;
+    }
+    #menu-list > div > p {
+        margin:15px 0px;
+    }
+    #menu-list svg {
+        margin-right:10%;
+    }
+    #menu-list  hr  {
+        border:1px solid rgb(235, 231, 231);
+    }
+    .menu-list-items {
+        display:none;
+    }
+    .menu-list-items > div {
+        flex-direction: column;
+        display:flex;
+    }
+    .menu-list-items > div > div {
+        margin-top:15px;
+
+        width:30%;
+    }
+    .menu-list-items > div p {
+        margin:3px;
+        font-size:16px;
+    }
+    .menu-list-items section {
+        font-size:12px;
+        margin: 5px 0px;
+    }
+}
 
 /* Navigation */
 @media screen and (max-width: 900px) {
@@ -657,6 +725,14 @@
     video {
         margin: 5% 15%;
     }
+}
+
+
+@media only screen and (max-width:900px) {
+    #header > div:nth-of-type(7) {
+        width:40%;
+    }
+
 }
 
 
@@ -681,8 +757,25 @@
         width: 90% in !important;
         margin: 5% 10%
     }
+    #header > div:nth-of-type(7) {
+        width: 38%;
+    }
 }
 
+@media only screen and (max-width: 700px) {
+    #header > div:nth-of-type(8) , #header > div:nth-of-type(7) {
+        display:none;
+    }
+    #header > div:nth-of-type(9) {
+        width: 69%;
+        text-align: right;
+    }
+    #header > div:nth-of-type(10) {
+        position : relative;
+        text-align: right;
+        padding-top:5px;
+    }
+}
 @media screen and (max-width: 600px) {
     .flex {
         flex-direction: column;
@@ -720,5 +813,25 @@
         width: 90% !important;
         padding-left: 5%;
     } 
-    
+    #header > div:nth-of-type(9) {
+        width: 60%;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width:800px){
+    .menu-list-items > div {
+        flex-direction:row;
+    }
+
+}
+
+@media only screen and (min-width:1100px) {
+    #menu-list > div{
+        display:none;
+    }
+
+    #menu-list-items {
+        display:none;
+    }
 }
